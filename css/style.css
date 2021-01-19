@@ -18,7 +18,7 @@ img {
   grid-gap: 3px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(7, 130px);
-  /* display: none; */
+  user-select: none;
 }
 
 .img1 {
@@ -60,11 +60,63 @@ img {
   z-index: 100;
 }
 
-/* .modal-gallery {
+.modal-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-} */
+  background-color: black;
+  display: none;
+  user-select: none;
+}
+
+.modal-image-container img {
+  max-width: 550px;
+}
+
+.modal-image-container {
+  width: 80%;
+  max-width: 550px;
+  margin: 3.5em auto;
+}
+
+.modal-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.modal-arrows:hover {
+  background-color: darkkhaki;
+}
+
+.fa-arrow-left {
+  left: 1em;
+}
+
+.fa-arrow-right {
+  right: 1em;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  color: darksalmon;
+}
