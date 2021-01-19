@@ -64,6 +64,7 @@ function modalGallery(ev) {
    modGallery.style.display = "block";
    modImage.src = ev.target.src;
    index = ev.target.getAttribute('data-index');
+   arrowsDisplay(index);
    console.log(index)
    if(index === '0') {
     document.getElementById('left').style.display = "none"
