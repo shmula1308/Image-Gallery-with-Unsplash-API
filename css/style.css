@@ -69,6 +69,7 @@ img {
   background-color: black;
   display: none;
   user-select: none;
+  padding: 0 2em;
 }
 
 .modal-image-container img {
