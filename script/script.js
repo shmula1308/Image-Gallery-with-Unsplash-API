@@ -65,7 +65,6 @@ function modalGallery(ev) {
    modImage.src = ev.target.src;
    index = ev.target.getAttribute('data-index');
    arrowsDisplay(index);
-   console.log(index)
    if(index === '0') {
     document.getElementById('left').style.display = "none"
    }
@@ -111,7 +110,6 @@ function arrowsDisplay(idx) {
 closeBtn.addEventListener('click', () => {
     modGallery.style.display = 'none';
     imagesContainer.style.display = 'grid';
-    
 } )
 
 
